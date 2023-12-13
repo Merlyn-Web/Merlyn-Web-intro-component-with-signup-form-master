@@ -1,0 +1,414 @@
+@import url('https://fonts.googleapis.com/css2? family= Bai+Jamjuree:wght@600 & family= Poppins:wght@700 & display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-weight: 700;
+}
+
+body {
+    background-image: url(./images/bg-intro-desktop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: hsl(0, 100%, 74%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    padding: 150px;
+}
+
+.section1 {
+    margin-top: 200px;
+    padding-right: 20px;
+}
+
+.titre1 {
+    color: hsl(0, 0%, 100%);
+    font-size: 60px;
+}
+
+.text1 {
+    color: hsl(0, 0%, 100%);
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+h4 {
+    width: 600px;
+    height: 60px;
+    color: hsl(0, 0%, 100%);
+    text-align: center;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(248, 32%, 49%);
+    border-radius: 10px;
+    box-shadow: 0px 6px hsla(253, 33%, 34%, 0.194);
+}
+
+.span {
+    color: hsl(0, 0%, 100%);
+    font-weight: 400;
+    margin-left: 8px;
+}
+
+.Form {
+    margin-top: 20px;
+    background-color: hsl(0, 0%, 100%);
+    width: 600px;
+    height: 550px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 0px 6px hsla(253, 33%, 34%, 0.194);
+}
+
+form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.text2 {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 13px;
+}
+
+input {
+    width: 90%;
+    height: 60px;
+    border-radius: 5px;
+    margin-top: 20px;
+    border: 1px solid hsl(246, 25%, 77%);
+    outline: none;
+    padding: 20px;
+    color: hsl(250, 4%, 28%);
+    font-size: 20px;
+}
+
+#firstnameerror,
+#lastnameerror,
+#emailerror,
+#passworderror {
+    color: hsla(0, 94%, 50%, 0.733);
+    font-size: 15px;
+    margin-left: 300px;
+}
+
+.borderred {
+    border: 2px solid red;
+    background-image: url(./images/icon-error.svg);
+    background-repeat: no-repeat;
+    background-position: 480px;
+}
+
+.emailred {
+    color: hsla(0, 94%, 50%, 0.733);
+}
+
+input:focus {
+    outline: none;
+    border: 2px solid hsl(248, 32%, 49%);
+}
+
+button {
+    background-color: hsl(154, 59%, 51%);
+    width: 90%;
+    height: 60px;
+    border: none;
+    border-radius: 5px;
+    border-bottom: 4px solid hsla(154, 82%, 28%, 0.775);
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:active {
+    background-color: hsla(154, 59%, 51%, 0.603);
+}
+
+footer{
+    margin-top: 20px;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 1349px) {
+    .container {
+        padding: 40px;
+    }
+
+    .section1 {
+        padding-right: 40px;
+    }
+
+    .titre1 {
+        font-size: 40px;
+    }
+
+    h4 {
+        font-size: 18px;
+        width: 500px;
+    }
+
+    .Form {
+        width: 500px;
+        height: 500px;
+    }
+
+    input {
+        font-size: 18px;
+    }
+
+    .borderred {
+        background-position: 400px;
+    }
+
+    #firstnameerror,
+    #lastnameerror,
+    #emailerror,
+    #passworderror {
+        margin-left: 250px;
+    }
+
+    button {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 1090px) {
+    .titre1 {
+        font-size: 35px;
+    }
+
+    .text1 {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .container {
+        padding: 30px;
+    }
+
+    .section1 {
+        padding-right: 10px;
+    }
+
+    .titre1 {
+        font-size: 30px;
+    }
+
+    .text1 {
+        font-size: 13px;
+    }
+
+    h4 {
+        width: 400px;
+        height: 50px;
+    }
+
+    .Form {
+        width: 400px;
+    }
+
+    input {
+        width: 90%;
+        height: 50px;
+        font-size: 15px;
+    }
+
+    .borderred {
+        background-position: 320px;
+    }
+
+    #firstnameerror,
+    #lastnameerror,
+    #emailerror,
+    #passworderror {
+        font-size: 13px;
+        margin-left: 170px;
+    }
+
+    button {
+        width: 90%;
+        height: 50px;
+        font-size: 15px;
+    }
+
+    .text2 {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section1 {
+        padding: 0;
+        margin: 0;
+    }
+
+    .titre1 {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .text1 {
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .section2 {
+        margin-top: 100px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .titre1 {
+        font-size: 25px;
+    }
+
+    .text1 {
+        font-size: 15px;
+    }
+
+    h4 {
+        width: 350px;
+        height: 60px;
+        font-size: 18px;
+        text-align: center;
+        padding: 15px;
+    }
+
+    .Form {
+        width: 350px;
+        height: 460px;
+    }
+
+    .borderred {
+        background-position: 270px;
+    }
+
+    #firstnameerror,
+    #lastnameerror,
+    #emailerror,
+    #passworderror {
+        margin-left: 130px;
+    }
+
+    button {
+        width: 90%;
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .text1 {
+        font-size: 13px;
+    }
+
+    h4 {
+        width: 300px;
+        font-size: 15px;
+    }
+
+    .Form {
+        width: 300px;
+    }
+
+    input {
+        width: 90%;
+        height: 40px;
+    }
+
+    .borderred {
+        background-position: 230px;
+    }
+
+    #firstnameerror,
+    #lastnameerror,
+    #emailerror,
+    #passworderror {
+        font-size: 10px;
+        margin-left: 130px;
+    }
+
+    button {
+        width: 90%;
+        height: 40px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    h4 {
+        width: 280px;
+    }
+
+    .Form {
+        width: 280px;
+    }
+
+    input {
+        width: 90%;
+        font-size: 13px;
+    }
+
+    .borderred {
+        background-position: 210px;
+    }
+
+    #firstnameerror,
+    #lastnameerror,
+    #emailerror,
+    #passworderror {
+        margin-left: 100px;
+    }
+
+    button {
+        width: 90%;
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 330px) {
+    h4 {
+        height: 50px;
+        font-size: 13px;
+    }
+
+    .borderred {
+        background-position: 210px;
+    }
+
+    #firstnameerror,
+    #lastnameerror,
+    #emailerror,
+    #passworderror {
+        margin-left: 100px;
+    }
+}
